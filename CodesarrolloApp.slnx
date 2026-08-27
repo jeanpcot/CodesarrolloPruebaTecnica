@@ -1,3 +1,8 @@
 <Solution>
+  <Folder Name="/BaseDeDatos/">
+    <File Path="ConsultaMorosidad.sql" />
+    <File Path="init.sql" />
+    <File Path="InsertarDatosPrueba.sql" />
+  </Folder>
   <Project Path="CodesarrolloApp/CodesarrolloApp.csproj" />
 </Solution>
