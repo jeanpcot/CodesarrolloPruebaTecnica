@@ -63,10 +63,5 @@ namespace CodesarrolloApp
             this.DialogResult = DialogResult.Cancel;
             this.Close();
         }
-
-        private void lbDisponibles_MouseDoubleClick(object sender, MouseEventArgs e)
-        {
-
-        }
     }
 }
