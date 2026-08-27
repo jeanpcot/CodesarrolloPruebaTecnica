@@ -35,6 +35,13 @@ namespace CodesarrolloApp
                 camposFaltantes.Add("Descripción");
             }
 
+            if (txtNombre.Text.Any(char.IsDigit))
+            {
+                MessageBox.Show("El nombre no puede contener números.", "Formato no válido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtNombre.Focus();
+                return;
+            }
+
             // Si la lista de campos faltantes tiene elementos, mostramos el error
             if (camposFaltantes.Count > 0)
             {
@@ -53,6 +60,8 @@ namespace CodesarrolloApp
                 Activo = chkActivo.Checked,
                 Descripcion = txtDescripcion.Text
             };
+
+            MessageBox.Show("El alumno se guardó correctamente.", "Guardado exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             this.DialogResult = DialogResult.OK;
             this.Close();
