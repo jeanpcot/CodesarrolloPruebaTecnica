@@ -33,10 +33,14 @@ Y nos da la opcion para confirmar y cancelar mediante botones.
 
 <img width="423" height="527" alt="image" src="https://github.com/user-attachments/assets/7fb6cc5e-cad9-4ab6-94e1-1f2d265197c8" />
 
+---
+
 Al confirmar se realizan validaciones:
 - Campos llenos
-- Nombres sin números
-
 <img width="427" height="741" alt="image" src="https://github.com/user-attachments/assets/22d54bb5-43dd-4cdc-af32-4964221b6367" />
+
+---
+
+- Nombres sin números
 <img width="427" height="741" alt="image" src="https://github.com/user-attachments/assets/7d31089d-2ef3-4b11-b629-ce687a410594" />
 
