@@ -124,5 +124,18 @@ namespace CodesarrolloApp
                 txtDescripcion.Text = string.Empty; // Limpiar si no hay selección
             }
         }
+
+        private void btnOrdenarInverso_Click(object sender, EventArgs e)
+        {
+            // Usamos LINQ para ordenar por nombre de forma descendente
+            var listaOrdenada = listaTodosLosAlumnos.OrderByDescending(a => a.Nombre).ToList();
+
+            // Limpiamos y volvemos a llenar para refrescar el GridView
+            listaTodosLosAlumnos.Clear();
+            foreach (var alumno in listaOrdenada)
+            {
+                listaTodosLosAlumnos.Add(alumno);
+            }
+        }
     }
 }
