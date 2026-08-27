@@ -42,29 +42,37 @@
             // 
             // dgvAlumnos
             // 
+            dgvAlumnos.AllowUserToAddRows = false;
+            dgvAlumnos.AllowUserToDeleteRows = false;
+            dgvAlumnos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvAlumnos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvAlumnos.Location = new Point(12, 59);
             dgvAlumnos.Name = "dgvAlumnos";
+            dgvAlumnos.ReadOnly = true;
             dgvAlumnos.RowHeadersWidth = 51;
-            dgvAlumnos.Size = new Size(458, 341);
+            dgvAlumnos.Size = new Size(625, 341);
             dgvAlumnos.TabIndex = 0;
             dgvAlumnos.CellContentClick += dataGridView1_CellContentClick;
             // 
             // lbDisponibles
             // 
             lbDisponibles.FormattingEnabled = true;
-            lbDisponibles.Location = new Point(476, 81);
+            lbDisponibles.Location = new Point(643, 81);
             lbDisponibles.Name = "lbDisponibles";
             lbDisponibles.Size = new Size(150, 104);
             lbDisponibles.TabIndex = 1;
+            lbDisponibles.SelectedIndexChanged += lbDisponibles_SelectedIndexChanged;
+            lbDisponibles.MouseDoubleClick += lbDisponibles_MouseDoubleClick;
             // 
             // cmbSeleccionados
             // 
             cmbSeleccionados.FormattingEnabled = true;
-            cmbSeleccionados.Location = new Point(637, 81);
+            cmbSeleccionados.Location = new Point(804, 81);
             cmbSeleccionados.Name = "cmbSeleccionados";
             cmbSeleccionados.Size = new Size(151, 28);
             cmbSeleccionados.TabIndex = 2;
+            cmbSeleccionados.SelectedIndexChanged += cmbSeleccionados_SelectedIndexChanged;
+            cmbSeleccionados.Click += lbDisponibles_SelectedIndexChanged;
             // 
             // btnOrdenar
             // 
@@ -74,10 +82,11 @@
             btnOrdenar.TabIndex = 3;
             btnOrdenar.Text = "Ordenar por orden alfabético";
             btnOrdenar.UseVisualStyleBackColor = true;
+            btnOrdenar.Click += btnOrdenar_Click;
             // 
             // txtDescripcion
             // 
-            txtDescripcion.Location = new Point(476, 232);
+            txtDescripcion.Location = new Point(643, 232);
             txtDescripcion.Multiline = true;
             txtDescripcion.Name = "txtDescripcion";
             txtDescripcion.Size = new Size(150, 62);
@@ -85,17 +94,18 @@
             // 
             // btnAgregar
             // 
-            btnAgregar.Location = new Point(652, 371);
+            btnAgregar.Location = new Point(819, 371);
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(136, 29);
             btnAgregar.TabIndex = 5;
             btnAgregar.Text = "Agregar alumno";
             btnAgregar.UseVisualStyleBackColor = true;
+            btnAgregar.Click += btnAgregar_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(476, 58);
+            label1.Location = new Point(643, 58);
             label1.Name = "label1";
             label1.Size = new Size(87, 20);
             label1.TabIndex = 6;
@@ -104,7 +114,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(637, 58);
+            label2.Location = new Point(804, 58);
             label2.Name = "label2";
             label2.Size = new Size(104, 20);
             label2.TabIndex = 7;
@@ -113,7 +123,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(476, 209);
+            label3.Location = new Point(643, 209);
             label3.Name = "label3";
             label3.Size = new Size(87, 20);
             label3.TabIndex = 8;
@@ -123,7 +133,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 413);
+            ClientSize = new Size(967, 413);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -134,7 +144,7 @@
             Controls.Add(lbDisponibles);
             Controls.Add(dgvAlumnos);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Alumnos";
             ((System.ComponentModel.ISupportInitialize)dgvAlumnos).EndInit();
             ResumeLayout(false);
             PerformLayout();
