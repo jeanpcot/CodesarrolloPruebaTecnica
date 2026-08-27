@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CodesarrolloApp
 {
-    internal class Alumno
+    public class Alumno
     {
         // Propiedades solicitadas en el punto 2
         // Al ser publicas se pone con mayuscula la primera letra de cada palabra
