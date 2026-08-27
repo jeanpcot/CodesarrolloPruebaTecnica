@@ -61,7 +61,7 @@
             txtDescripcion.Multiline = true;
             txtDescripcion.Name = "txtDescripcion";
             txtDescripcion.Size = new Size(197, 64);
-            txtDescripcion.TabIndex = 3;
+            txtDescripcion.TabIndex = 1;
             // 
             // btnCancelar
             // 
@@ -71,15 +71,17 @@
             btnCancelar.TabIndex = 4;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.Click += btnCancelar_Click;
             // 
             // btnConfirmar
             // 
             btnConfirmar.Location = new Point(286, 249);
             btnConfirmar.Name = "btnConfirmar";
             btnConfirmar.Size = new Size(94, 29);
-            btnConfirmar.TabIndex = 5;
+            btnConfirmar.TabIndex = 3;
             btnConfirmar.Text = "Confirmar";
             btnConfirmar.UseVisualStyleBackColor = true;
+            btnConfirmar.Click += btnConfirmar_Click;
             // 
             // label1
             // 
@@ -122,7 +124,7 @@
             Controls.Add(chkActivo);
             Controls.Add(txtNombre);
             Name = "Form2";
-            Text = "Form2";
+            Text = "Agregar alumno";
             ResumeLayout(false);
             PerformLayout();
         }
