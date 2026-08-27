@@ -52,7 +52,6 @@
             dgvAlumnos.RowHeadersWidth = 51;
             dgvAlumnos.Size = new Size(625, 341);
             dgvAlumnos.TabIndex = 0;
-            dgvAlumnos.CellContentClick += dataGridView1_CellContentClick;
             // 
             // lbDisponibles
             // 
@@ -61,7 +60,6 @@
             lbDisponibles.Name = "lbDisponibles";
             lbDisponibles.Size = new Size(150, 104);
             lbDisponibles.TabIndex = 1;
-            lbDisponibles.SelectedIndexChanged += lbDisponibles_SelectedIndexChanged;
             lbDisponibles.MouseDoubleClick += lbDisponibles_MouseDoubleClick;
             // 
             // cmbSeleccionados
@@ -72,7 +70,6 @@
             cmbSeleccionados.Size = new Size(151, 28);
             cmbSeleccionados.TabIndex = 2;
             cmbSeleccionados.SelectedIndexChanged += cmbSeleccionados_SelectedIndexChanged;
-            cmbSeleccionados.Click += lbDisponibles_SelectedIndexChanged;
             // 
             // btnOrdenar
             // 

@@ -56,29 +56,6 @@ namespace CodesarrolloApp
             }
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void lbDisponibles_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            /*
-            if (lbDisponibles.SelectedItem is Alumno alumnoSeleccionado)
-            {
-                // Uso de LINQ para buscar el elemento en la lista original
-                var alumnoMover = listaDisponibles.FirstOrDefault(a => a.Identificador == alumnoSeleccionado.Identificador);
-
-                if (alumnoMover != null)
-                {
-                    // Retirar de disponibles y agregar a seleccionados
-                    listaDisponibles.Remove(alumnoMover);
-                    listaSeleccionados.Add(alumnoMover);
-                }
-            }
-            */
-        }
-
         private void lbDisponibles_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             if (lbDisponibles.SelectedItem is Alumno alumnoSeleccionado)
